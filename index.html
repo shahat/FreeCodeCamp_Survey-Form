@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> first certfication project </title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    </head>
+  <body>
+        <header>
+            <h1 id="title"> FreeCodeCamp Survey Form
+            </h1>
+            <p id="description">Thank you for taking the time to help us improve the platform
+
+            </p>
+        </header>
+    
+<form id="survey-form">
+
+    <div class="form-section">
+                <label id="name-label" for="name"> Name : </label>
+                <input id="name" class="bloclClass" type="text" required placeholder="Enter the name" />
+                <label id="email-label" for="email"> Email : </label>
+                <input id="email" class="bloclClass" type="email" required placeholder="Enter the email" />
+                <label id="number-label" for="number"> Number : </label>
+                <input id="number" class="bloclClass" type="number" required min="8" max="150" placeholder=" Enter numbers" />
+    </div>
+    <div class="form-section"> 
+            <p>Which option best describes your current role?</p>
+                <select id="dropdown" class="bloclClass" name="role" >
+                    <option selected>Select current role </option>
+                    <option>student</option>
+                    <option>Full time job </option>
+                    <option>Part time job </option>
+                    <option>Full time learner </option>
+                </select> 
+    </div> 
+    <div class="form-section">
+                <p> Would you recommend freeCodeCamp to a friend?</p>
+                <label><input name="radio" type="radio" value="male" /> DEfinitlly</label>
+                <label><input name="radio" type="radio" value="femail" /> Maybe </label> 
+                <label><input name="radio" type="radio" value="femail" /> Not sure </label> 
+    </div>
+   <div class="form-section">
+              <p>What would you like to see improved? <span>(Check all that apply)</span></p>
+                <label> <input  type="checkbox" value="first" />Front-end Projects</label>
+                <label> <input  type="checkbox" value="first" /> Back-end Projects</label>
+                <label> <input  type="checkbox" value="first" /> Data Visualization</label>
+                <label> <input  type="checkbox" value="first" /> Open Source Community</label>
+                <label> <input  type="checkbox" value="first" /> Gitter help rooms</label>
+                <label> <input  type="checkbox" value="first" /> Videos</label>
+                <label> <input  type="checkbox" value="first" /> City Meetups</label>
+                <label> <input  type="checkbox" value="first" /> Additional Courses</label>
+            </div>
+            <div class="form-section">
+            <p> Any comments or suggestions?</p>
+            <textarea id="form-textarea" cols="25" rows="3" placeholder="Enter your comment here...">
+            </textarea>
+        <button id="submit" value="submit">Submit</button>
+    </div>
+</form>
+     
+</body>
+</html>
